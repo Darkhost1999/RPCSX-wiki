@@ -35,6 +35,12 @@ defaults:
   -
     values:
       layout: libdoc/page
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: '*'
+    Access-Control-Request-Method: '*'
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
