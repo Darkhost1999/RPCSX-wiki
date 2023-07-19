@@ -5,3 +5,7 @@
 layout: libdoc/page
 permalink: /
 ---
+
+Please see [our FAQ](/wiki/faq/) before asking questions.
+
+To start running the emulator, check the [install guide](/wiki/installation/).

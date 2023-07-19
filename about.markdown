@@ -1,5 +1,6 @@
 ---
 layout: libdoc/page
+order: 99
 title: About
 permalink: /about/
 description: Project links and build info
