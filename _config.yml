@@ -39,7 +39,11 @@ defaults:
 kramdown:
   parse_block_html: true
   syntax_highlighter_opts:
-        disable: true
+        disable: false
+
+plugins:
+  - jekyll-feed
+  - kramdown
 
 webrick:
   headers:

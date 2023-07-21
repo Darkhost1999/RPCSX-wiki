@@ -10,13 +10,19 @@ description: Frequently Asked Questions about RPCSX.
 
 **A:** RPCSX is an experimental emulator for PS4 games (and later, PS5 games). Development is ongoing.
 
-## Bloodborne is not ready to be played yet. 
+## Can I play Bloodborne? 
 
-Stop asking about it.
+Not yet.
 
-## Neither is MW2019.
+## Can I run RPCSX on Windows?
 
-bottom text
+No. The current scope of the project is Linux-only. This may change in future, as the overwhelming majority of the user-base is on Windows.
+
+### What about the WSL?
+The Windows Subsystem for Linux ("WSL") is a Windows feature that virtualizes (or hypervises) a Linux distro inside (or alongside) your Windows intstallation. Three hurdles exist:
+1. Currently, there are no confirmed reports of running RPCSX on WSL. 
+3. The official Vulkan build for WSL does not support the features required.
+2. There are no graphics drivers for the WSL, so rendering is CPU-only. (*footnote: there's an experimental shared-memory CUDA driver for WSL intended for use with TensorFlow/PyTorch. Any power users that want to kludge that together with Dozen Vulkan, please do so.*)
 
 ## What is the current state of the project?
 
