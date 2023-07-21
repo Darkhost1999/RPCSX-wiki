@@ -29,6 +29,7 @@ sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation
 git clone https://github.com/KhronosGroup/SPIRV-Cross && cd SPIRV-Cross && mkdir build && cd build && cmake .. && cmake --build . && sudo make install
 ```
 go to [Continued Install.](/wiki/installation/#continued-install)
+
 #### Arch
 - Install traditional dependencies.
 ```sh
