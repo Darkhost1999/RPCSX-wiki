@@ -28,6 +28,11 @@ sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation
 ```sh
 git clone https://github.com/KhronosGroup/SPIRV-Cross && cd SPIRV-Cross && mkdir build && cd build && cmake .. && cmake --build . && sudo make install
 ```
+- Comment out the `text-segment` line in [this file](https://github.com/RPCSX/rpcsx/blob/master/rpcsx-os/CMakeLists.txt#L65)
+`<repo dir>/rpcsx-os/CMakeLists.txt`
+```
+target_link_options(rpcsx-os PUBLIC "LINKER:-Ttext-segment,0x0000010000000000")
+```
 go to [Continued Install.](/wiki/installation/#continued-install)
 
 #### Arch
