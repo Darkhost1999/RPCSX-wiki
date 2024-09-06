@@ -10,41 +10,42 @@ description: >-
 - TOC
 {:toc}
 
+## Update!
+Third party dependencies have been merged into the source tree as submodules! If you previously installed RPCSX when you needed `spirv-cross`, `gslang`, or `xbyak`, you should run:
+```sh
+git pull
+git submodule update --recursive --remote
+```
+
+## Install
+
 There are currently two methods to install RPCSX:
 ### Method 1: Linux
 
-1. Install dependencies.
-#### .deb-based (Ubuntu etc.)
+#### Install dependencies.
+
+  - **.deb-based (Ubuntu etc.)**
 ```sh
-sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev
+sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git
+
 ```
 go to [Continued Install.](/wiki/installation/#continued-install)
-#### .rpm-based (Fedora etc.)
-- Install traditional dependencies.
+
+  - **.rpm-based (Fedora etc.)**
+    - Install traditional dependencies.
 ```sh
-sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel
+sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel git
 ```
-- Install `spirv-cross`.
-```sh
-git clone https://github.com/KhronosGroup/SPIRV-Cross && cd SPIRV-Cross && mkdir build && cd build && cmake .. && cmake --build . && sudo make install
-```
-- Comment out the `text-segment` line in [this file](https://github.com/RPCSX/rpcsx/blob/master/rpcsx-os/CMakeLists.txt#L65), `<repo dir>/rpcsx-os/CMakeLists.txt`
+    - Comment out the `text-segment` line in [this file](https://github.com/RPCSX/rpcsx/blob/master/rpcsx-os/CMakeLists.txt#L65), `<repo dir>/rpcsx-os/CMakeLists.txt`
 ```
 # target_link_options(rpcsx-os PUBLIC "LINKER:-Ttext-segment,0x0000010000000000")
 ```
 go to [Continued Install.](/wiki/installation/#continued-install)
 
-#### Arch
-- Install traditional dependencies.
+  - **Arch**
+    - Install traditional dependencies. (vulkan-devel is a group, and you should install **all**!)
 ```sh
-sudo pacman -S libunwind glfw-x11 vulkan-devel glslang
-```
-- Pull `spirv-cross` from the AUR. **Skip the first line if you have `yay` already.**
-```sh
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-```
-```sh
-yay -S spirv-cross
+sudo pacman -S --needed git base-devel libunwind glfw-x11 vulkan-devel
 ```
 go to [Continued Install.](/wiki/installation/#continued-install)
 
