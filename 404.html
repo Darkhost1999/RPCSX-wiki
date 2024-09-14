@@ -6,6 +6,15 @@ description: Sorry, the page you're looking for doesn't exist.
 ---
 
 <style type="text/css" media="screen">
+	@font-face {
+    font-family: "RedHat Display Bold";
+    src: url(assets/libdoc/fonts/RedHatDisplay-Bold.woff)
+  }
+	@font-face {
+    font-family: "RedHat Display";
+    src: url(assets/libdoc/fonts/RedHatDisplay-Regular.woff)
+  }
+
 	.container {
 		margin: 40px auto;
 		max-width: 800px;
@@ -16,6 +25,10 @@ description: Sorry, the page you're looking for doesn't exist.
 		border-radius: 10px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}
+	
+	p, a {
+		font-family: "RedHat Display";
+	}
 
 	h1 {
 		margin: 20px 0;
@@ -23,6 +36,7 @@ description: Sorry, the page you're looking for doesn't exist.
 		line-height: 1;
 		letter-spacing: -2px;
 		color: #333;
+		font-family: "RedHat Display Bold";
 	}
 
 	a {
