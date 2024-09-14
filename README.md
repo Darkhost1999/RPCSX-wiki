@@ -29,6 +29,7 @@ bundle install
 ### Development
 
 - Run Jekyll Server:
+
 Note: Hot reloading is unsupported, refresh the page to see changes.
 ```
 bundle exec jekyll serve
