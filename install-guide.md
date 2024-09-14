@@ -19,7 +19,8 @@ git submodule update --recursive --remote
 
 ## Install
 
-There are currently two methods to install RPCSX:
+We provide two installation methods:
+
 ### Method 1: Linux
 
 #### Install dependencies.
@@ -32,7 +33,6 @@ sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev 
 go to [Continued Install.](/wiki/installation/#continued-install)
 
   - **.rpm-based (Fedora etc.)**
-    - Install traditional dependencies.
 ```sh
 sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel git
 ```
@@ -43,7 +43,7 @@ sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation
 go to [Continued Install.](/wiki/installation/#continued-install)
 
   - **Arch**
-    - Install traditional dependencies. (vulkan-devel is a group, and you should install **all**!)
+    - vulkan-devel is a group, and you should install **all**!
 ```sh
 sudo pacman -S --needed git base-devel libunwind glfw-x11 vulkan-devel
 ```
@@ -62,7 +62,7 @@ mkdir -p build && cd build && cmake .. && cmake --build .
 ```
 
 4. Create a virtual HDD.
-Note that the PS4 filesystem is **case-insensitive**.
+Note: PS4 filesystem is **case-insensitive**.
 ```sh
 truncate -s 512M ps4-hdd.exfat
 mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
@@ -71,6 +71,6 @@ sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs
 ```
 
 ### Method 2: WSL
-**TODO**
+**TODO (under development)**
 #### ArchWSL
-**TODO**
+**TODO (under development)**

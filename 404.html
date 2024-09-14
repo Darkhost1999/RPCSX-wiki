@@ -1,22 +1,42 @@
 ---
 permalink: /404.html
-layout: libdoc/page
-title: 404
-description: that's an error.
+layout: raw
+title: 404 Error - Page Not Found
+description: Sorry, the page you're looking for doesn't exist.
 ---
 
 <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+	.container {
+		margin: 40px auto;
+		max-width: 800px;
+		text-align: center;
+		padding: 20px;
+		background-color: #f9f9f9;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		margin: 20px 0;
+		font-size: 5em;
+		line-height: 1;
+		letter-spacing: -2px;
+		color: #333;
+	}
+
+	a {
+		text-decoration: none;
+		color: #337ab7;
+	}
+
+	a:hover {
+		color: #23527c;
+	}
 </style>
 
-<a href="/wiki/">back to home.</a>
+<div class="container">
+	<h1>404 Error</h1>
+	<p>Sorry, the page you're looking for doesn't exist.</p>
+	<a href="/wiki/">Back to Home</a>
+</div>
