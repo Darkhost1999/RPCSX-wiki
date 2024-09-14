@@ -10,9 +10,9 @@ description: >-
 - TOC
 {:toc}
 
-## How to run samples and games
+## Prerequisites
 
-You will need a decrypted dump of the console firmware, **OBTAINED LAWFULLY, FROM YOUR OWN PS4 CONSOLE**.
+You will need a decrypted dump of the PlayStation 4 console firmware, **OBTAINED LAWFULLY, FROM YOUR OWN PS4 CONSOLE**.
 
 Compatible versions:
 - 5.05
@@ -20,7 +20,8 @@ Compatible versions:
 - 11.0
 
 ## Help
-See the Commands of `rpcsx-os` (`-h` argument), or join the [Discord](https://discord.gg/t6dzA4wUdG).
+- See the Commands of `rpcsx-os` (`-h` argument)
+- Join the [Discord](https://discord.com/invite/WEGamDwZnE).
 
 ## Booting games: 
 ```sh
@@ -38,4 +39,4 @@ rpcsx-os --mount /path/to/firmware/md0/ /  --mount /path/to/game/app0 /app0 /app
 
 ## Global optional args
 - Log a segfault: `--trace`
-- Log to text file: add `&> log.txt` at the end of the whole command before hitting enter
+- Log to text file: add `&> log.txt` at the end of the whole command before pressing enter
