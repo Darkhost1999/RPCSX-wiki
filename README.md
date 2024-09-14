@@ -2,7 +2,7 @@
 
 ## Contributing
 
-### Project Setup
+### Project setup
 Dependencies: Ruby 3.x
 ```sh
 gem install bundler
@@ -11,7 +11,7 @@ cd wiki
 bundle install
 ```
 
-### Compile and Hot-Reload for Development
+### Build for development preview
 Note: hot reloading is unsupported, refresh the page to see your changes.
 ```sh
 bundle exec jekyll serve
