@@ -39,3 +39,7 @@ gem "csv", "~> 3.3"
 gem "base64", "~> 0.2.0"
 
 gem "bigdecimal", "~> 3.1"
+
+gem "rubocop-jekyll", "~> 0.12.0"
+
+gem "rubocop-md", "~> 1.2"

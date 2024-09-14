@@ -1,0 +1,41 @@
+require: 
+  - rubocop-performance
+  - rubocop-jekyll
+  - rubocop-md
+
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml
+
+Markdown:
+  # Whether to run RuboCop against non-valid snippets
+  WarnInvalid: true
+  # Whether to lint codeblocks without code attributes
+  Autodetect: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineEndStringConcatenationIndentation: # (new in 1.18)                                                                                                    
+  Enabled: true                                                                                                                                                  
+Lint/EmptyInPattern: # (new in 1.16)                                                                                                                             
+  Enabled: true                                                                                                                                                  
+Naming/InclusiveLanguage: # (new in 1.18)
+  Enabled: true
+Style/InPatternThen: # (new in 1.16)
+  Enabled: true
+Style/MultilineInPatternThen: # (new in 1.16)
+  Enabled: true
+Style/QuotedSymbols: # (new in 1.16)
+  Enabled: true
+Performance/ConcurrentMonotonicTime: # (new in 1.12)
+  Enabled: true
+Performance/MapCompact: # (new in 1.11)
+  Enabled: true
+Performance/MapMethodChain: # (new in 1.19)
+  Enabled: true
+Performance/RedundantEqualityComparisonBlock: # (new in 1.10)
+  Enabled: true
+Performance/RedundantSplitRegexpArgument: # (new in 1.10)
+  Enabled: true
+Performance/StringIdentifierArgument: # (new in 1.13)
+  Enabled: true
