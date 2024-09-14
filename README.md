@@ -1,21 +1,38 @@
 # RPCSX Wiki
 
-## Contributing
+## Installation
+Tested on Ubuntu WSL
+- Update your repository lists and packages:
+```
+sudo apt update && sudo apt upgrade -y
+```
 
-### Project setup
-Dependencies: Ruby 3.x
-```sh
-gem install bundler
+- Install dependencies:
+```
+sudo apt-get install ruby-full build-essential dh-autoreconf libffi-dev libssl-dev
+```
+
+- Clone and set up wiki:
+```
 git clone https://github.com/RPCSX/wiki
 cd wiki
+```
+Note: Do not run Bundler as root. Installing your bundle as root will break this application for all
+non-root users on your machine.
+```
+gem install bundler
+```
+```
 bundle install
 ```
 
-### Build for development preview
-Note: hot reloading is unsupported, refresh the page to see your changes.
-```sh
+### Development
+
+- Run Jekyll Server:
+Note: Hot reloading is unsupported, refresh the page to see changes.
+```
 bundle exec jekyll serve
 ```
+### Before Pushing Changes
 
-### Pushing your changes
-Kindly run `rubocop` on your local files before pushing your changes. Thanks!
+Run `rubocop` on your local files.
