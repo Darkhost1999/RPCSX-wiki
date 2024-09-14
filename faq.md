@@ -10,7 +10,7 @@ description: Frequently Asked Questions about RPCSX.
 
 **A:** RPCSX is an experimental emulator for PS4 games (and later, PS5 games). Development is ongoing.
 
-## Can I play Bloodborne? 
+## Can I play Bloodborne?
 
 Not yet.
 

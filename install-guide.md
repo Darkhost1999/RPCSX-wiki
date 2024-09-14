@@ -3,7 +3,7 @@ layout: libdoc/page
 title: Installation
 order: 2
 permalink: /installation/
-description: >- 
+description: >-
   For the foreseeable future, installation will require Linux in some form.
 ---
 

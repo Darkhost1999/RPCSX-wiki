@@ -3,7 +3,7 @@ layout: libdoc/page
 title: Running RPCSX
 order: 2
 permalink: /run/
-description: >- 
+description: >-
   After installing RPCSX, here's how you start testing it.
 ---
 
@@ -23,7 +23,7 @@ Compatible versions:
 - See the Commands of `rpcsx-os` (`-h` argument)
 - Join the [Discord](https://discord.com/invite/WEGamDwZnE).
 
-## Booting games: 
+## Booting games:
 ```sh
 rm -rf /dev/shm/rpcsx-* && ./rpcsx-gpu
 ```
