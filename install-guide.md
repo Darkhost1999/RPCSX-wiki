@@ -43,7 +43,7 @@ sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation
 go to [Continued Install.](/wiki/installation/#continued-install)
 
   - **Arch**
-    - vulkan-devel is a group, and you should install **all**!)
+    - vulkan-devel is a group, and you should install **all**!
 ```sh
 sudo pacman -S --needed git base-devel libunwind glfw-x11 vulkan-devel
 ```

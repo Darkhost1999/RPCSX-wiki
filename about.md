@@ -8,7 +8,7 @@ description: Project links and build info
 
 This wiki houses documentation and install guides for the PlayStation 4 emulator RPCSX. Development happens on [our GitHub](https://github.com/rpcsx/rpcsx).
 
-You can also find more information on the [official RPCSX website](https://rpcsx.github.io/rpcsx-site)
+You can also find more information on the [official RPCSX website](https://rpcsx.github.io/)
 
 ### This wiki was built with Jekyll and LibDoc.
 
