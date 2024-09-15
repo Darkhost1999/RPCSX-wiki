@@ -1,21 +1,31 @@
 # RPCSX Wiki
 
-## Contributing
+## Installation
 
-### Project setup
-Dependencies: Ruby 3.x
-```sh
-gem install bundler
+- Install Ruby:
+
+We recommend using Ruby Version Manager (RVM) to [Install Ruby](https://rvm.io/rvm/install)
+
+- Clone and set up wiki:
+```
 git clone https://github.com/RPCSX/wiki
 cd wiki
+```
+Note: Do not run Bundler as root. Installing your bundle as root will break this application for all
+non-root users on your machine.
+```
+gem install bundler
 bundle install
 ```
 
-### Build for development preview
-Note: hot reloading is unsupported, refresh the page to see your changes.
-```sh
+### Development
+
+- Run Jekyll Server:
+
+Note: Hot reloading is unsupported, refresh the page to see changes.
+```
 bundle exec jekyll serve
 ```
+### Before Pushing Changes
 
-### Pushing your changes
-Kindly run `rubocop` on your local files before pushing your changes. Thanks!
+Run `rubocop` on your local files.

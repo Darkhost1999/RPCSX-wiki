@@ -28,7 +28,6 @@ We provide two installation methods:
   - **.deb-based (Ubuntu etc.)**
 ```sh
 sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git
-
 ```
 go to [Continued Install.](/wiki/installation/#continued-install)
 
