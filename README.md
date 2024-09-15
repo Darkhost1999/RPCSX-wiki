@@ -3,6 +3,7 @@
 ## Installation
 
 - Install Ruby:
+
 We recommend using Ruby Version Manager (RVM) to [Install Ruby](https://rvm.io/rvm/install)
 
 - Clone and set up wiki:
