@@ -1,16 +1,9 @@
 # RPCSX Wiki
 
 ## Installation
-Tested on Ubuntu WSL
-- Update your repository lists and packages:
-```
-sudo apt update && sudo apt upgrade -y
-```
 
-- Install dependencies:
-```
-sudo apt-get install ruby-full build-essential dh-autoreconf libffi-dev libssl-dev
-```
+- Install Ruby:
+We recommend using Ruby Version Manager (RVM) to [Install Ruby](https://rvm.io/rvm/install)
 
 - Clone and set up wiki:
 ```
@@ -21,8 +14,6 @@ Note: Do not run Bundler as root. Installing your bundle as root will break this
 non-root users on your machine.
 ```
 gem install bundler
-```
-```
 bundle install
 ```
 
