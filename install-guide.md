@@ -28,7 +28,7 @@ We provide two installation methods:
   - **.deb-based (Ubuntu etc.)** Note: git is only needed for Ubuntu 22.04
 
 ```sh
-sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git libasound2-dev
+sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git libasound2-dev nasm g++-14
 ```
 
 go to [Continued Install.](/wiki/installation/#continued-install)
@@ -36,7 +36,7 @@ go to [Continued Install.](/wiki/installation/#continued-install)
   - **.rpm-based (Fedora etc.)**
 
 ```sh
-sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel alsa-lib-devel
+sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel alsa-lib-devel nasm
 ```
 
 go to [Continued Install.](/wiki/installation/#continued-install)
@@ -45,7 +45,7 @@ go to [Continued Install.](/wiki/installation/#continued-install)
     - vulkan-devel is a group, and you should install **all**!
 
 ```sh
-sudo pacman -S libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib
+sudo pacman -S libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib nasm
 ```
 
 go to [Continued Install.](/wiki/installation/#continued-install)
