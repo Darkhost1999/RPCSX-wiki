@@ -45,7 +45,7 @@ go to [Continued Install.](/wiki/installation/#continued-install)
     - vulkan-devel is a group, and you should install **all**!
 
 ```sh
-sudo pacman -S libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib nasm
+sudo pacman -S --needed libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib nasm
 ```
 
 go to [Continued Install.](/wiki/installation/#continued-install)
