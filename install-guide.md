@@ -25,51 +25,46 @@ We provide two installation methods:
 
 #### Install dependencies.
 
-  - **.deb-based (Ubuntu etc.)**
+  - **.deb-based (Ubuntu etc.)** Note: git is only needed for Ubuntu 22.04
+
 ```sh
-sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git
+sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git libasound2-dev nasm g++-14
 ```
+
 go to [Continued Install.](/wiki/installation/#continued-install)
 
   - **.rpm-based (Fedora etc.)**
+
 ```sh
-sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel git
+sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel gcc-c++ gcc sox-devel alsa-lib-devel nasm
 ```
-    - Comment out the `text-segment` line in [this file](https://github.com/RPCSX/rpcsx/blob/master/rpcsx-os/CMakeLists.txt#L65), `<repo dir>/rpcsx-os/CMakeLists.txt`
-```
-# target_link_options(rpcsx-os PUBLIC "LINKER:-Ttext-segment,0x0000010000000000")
-```
+
 go to [Continued Install.](/wiki/installation/#continued-install)
 
   - **Arch**
     - vulkan-devel is a group, and you should install **all**!
+
 ```sh
-sudo pacman -S --needed git base-devel libunwind glfw-x11 vulkan-devel
+sudo pacman -S --needed libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib nasm
 ```
+
 go to [Continued Install.](/wiki/installation/#continued-install)
 
 #### Continued Install
 2. Clone the repo.
+
 ```sh
 git clone --recursive https://github.com/RPCSX/rpcsx && cd rpcsx
 git submodule update --init --recursive
 ```
 
 3. Compile the emulator.
-```sh
-mkdir -p build && cd build && cmake .. && cmake --build .
-```
 
-4. Create a virtual HDD.
-Note: PS4 filesystem is **case-insensitive**.
 ```sh
-truncate -s 512M ps4-hdd.exfat
-mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
-mkdir ps4-fs
-sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs
+cmake -B build && cmake --build build -j$(nproc)
 ```
 
 ### Method 2: WSL
-**TODO (under development)**
+**TODO (Coming Soon)**
 #### ArchWSL
 **TODO (under development)**
