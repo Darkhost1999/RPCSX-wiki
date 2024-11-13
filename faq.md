@@ -16,7 +16,7 @@ description: Frequently Asked Questions about RPCSX.
 
 ## Can I run RPCSX on Windows?
 
-**A:** Yes, But only through WSL at this time.
+**A:** Yes, But only through WSL at this time. [learn more](/wiki/installation/#method-2-wsl)
 
 ## What is the current state of the project?
 
