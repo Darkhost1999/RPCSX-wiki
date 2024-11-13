@@ -6,19 +6,19 @@ permalink: /faq/
 description: Frequently Asked Questions about RPCSX.
 ---
 
-## What is RPCSX?
+## Q: What is RPCSX?
 
 **A:** RPCSX is an experimental emulator for PS4 games (and later, PS5 games). Development is ongoing.
 
-## Can I play Bloodborne?
+## Q: Can I play Bloodborne?
 
 **A:** Not yet.
 
-## Can I run RPCSX on Windows?
+## Q: Can I run RPCSX on Windows?
 
 **A:** Yes, But only through WSL at this time. [learn more](/wiki/installation/#method-2-wsl)
 
-## What is the current state of the project?
+## Q: What is the current state of the project?
 
 **A:** The emulator can run test samples and play in-game on [We Are Doomed](https://store.playstation.com/en-us/product/UP2195-CUSA01783_00-WEAREDOOMED00000).
 A compatibility table is in progress and will be available when RPCSX can run commercial games.
