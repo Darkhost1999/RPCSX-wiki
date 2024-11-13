@@ -16,11 +16,7 @@ description: Frequently Asked Questions about RPCSX.
 
 ## Can I run RPCSX on Windows?
 
-**A:** No, currently the project is Linux-only. However, we may support Windows in the future due to popular demand.
-
-### What about the Windows Subsystem for Linux (WSL)?
-
-**A:** Testers have gotten WSL working and we are awaiting instructions for others to use WSL as well. Coming soon. Please be patient.
+**A:** Yes, But only through WSL at this time.
 
 ## What is the current state of the project?
 

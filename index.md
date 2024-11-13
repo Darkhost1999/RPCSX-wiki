@@ -6,7 +6,7 @@ layout: libdoc/page
 permalink: /
 ---
 
-Welcome to the RPCSX Wiki!
+# Welcome to the RPCSX Wiki
 
 Before you begin, please:
 
