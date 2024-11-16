@@ -27,8 +27,8 @@ We provide two installation methods:
 
 #### Install dependencies
 
-- **.deb-based (Ubuntu etc.)**<br>
-Note: git is only needed for Ubuntu 22.04
+- **.deb-based (Ubuntu etc.)**
+  Note: git is only needed for Ubuntu 22.04
 
 ```sh
 sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev libsox-dev git libasound2-dev nasm g++-14
@@ -44,8 +44,8 @@ sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation
 
 go to [Continued Install.](/wiki/installation/#continued-install)
 
-- **Arch**<br>
-vulkan-devel is a group, and you should install **all**!
+- **Arch**
+  vulkan-devel is a group, and you should install **all**!
 
 ```sh
 sudo pacman -S --needed libunwind glfw-x11 vulkan-devel sox git cmake alsa-lib nasm
@@ -70,8 +70,8 @@ go to [Continued Install.](/wiki/installation/#continued-install)
 
 ### Method 2: WSL
 
-**Install WSL**<br>
-Run Windows Powershell as Administrator:
+**Install WSL**
+  Run Windows Powershell as Administrator:
 
 ```sh
 wsl --install
@@ -79,8 +79,8 @@ wsl --install
 
 Reboot your machine
 
-**Install Ubuntu:**<br>
-Run Windows Powershell
+**Install Ubuntu:**
+  Run Windows Powershell
 
 ```sh
 wsl --install -d Ubuntu
@@ -88,8 +88,8 @@ wsl --install -d Ubuntu
 
 Setup user credentials
 
-**Configure Ubuntu and build RPCSX:**<br>
-Add the PPA repository that has the packages we need
+**Configure Ubuntu and build RPCSX:**
+  Add the PPA repository that has the packages we need
 
 ```sh
 sudo add-apt-repository ppa:oibaf/graphics-drivers
@@ -163,8 +163,8 @@ Initalize and shutdown the Linux machine
 sudo init 0
 ```
 
-Wait a few minutes to let Linux shutdown.<br>
-This will not turn off your PC only the virtual Ubuntu distro.
+Wait a few minutes to let Linux shutdown.
+  This will not turn off your PC only the virtual Ubuntu distro.
 
 #### ArchWSL
 
