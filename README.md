@@ -7,13 +7,19 @@
 We recommend using Ruby Version Manager (RVM) to [Install Ruby](https://rvm.io/rvm/install)
 
 - Clone and set up wiki:
-```
+
+```sh
+
 git clone https://github.com/RPCSX/wiki
 cd wiki
+
 ```
+
 Note: Do not run Bundler as root. Installing your bundle as root will break this application for all
 non-root users on your machine.
-```
+
+```sh
+
 gem install bundler
 bundle install
 ```
@@ -23,9 +29,11 @@ bundle install
 - Run Jekyll Server:
 
 Note: Hot reloading is unsupported, refresh the page to see changes.
-```
+
+```sh
 bundle exec jekyll serve
 ```
+
 ### Before Pushing Changes
 
 Run `rubocop` on your local files.
