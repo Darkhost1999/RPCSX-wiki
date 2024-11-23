@@ -8,7 +8,7 @@ description: Frequently Asked Questions about RPCSX.
 
 ## Q: What is RPCSX?
 
-**A:** RPCSX is an experimental emulator for PS4 games (and later, PS5 games). Development is ongoing.
+**A:** RPCSX is an experimental emulator for PS4 and PS5 games. Development is ongoing.
 
 ## Q: Can I play Bloodborne?
 
@@ -20,12 +20,14 @@ description: Frequently Asked Questions about RPCSX.
 
 ## Q: What is the current state of the project?
 
-**A:** The emulator can run test samples and play in-game on [We Are Doomed](https://store.playstation.com/en-us/product/UP2195-CUSA01783_00-WEAREDOOMED00000).
-A compatibility table is in progress and will be available when RPCSX can run commercial games.
+**A:** The emulator can run test samples and play in-game with a handful of titles.
+A compatibility table is in progress.
+Sound works, Controllers work, booting VSH on PS4 and PS5 firmware work, Safemodes for both work.
+Booting games from VSH is a work in progress.
 
 ## Community and Support
 
-Join our [discord server](https://discord.com/invite/WEGamDwZnE) to connect with developers and community members.
+Join our [Discord server](https://discord.com/invite/WEGamDwZnE) to connect with developers and community members.
 
 ## Helping the Project
 

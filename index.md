@@ -14,6 +14,6 @@ Check our [FAQ](/wiki/faq/) for answers to common questions
 
 Follow the [Installation Guide](/wiki/installation/) to set up the emulator
 
-Learn how to [Run RPCSX](https://rpcsx.github.io/wiki/run/) to play games and apps
+Learn how to [Run RPCSX](/wiki/run/) to play games and apps
 
-Discover more about our project on the [About Page](https://rpcsx.github.io/wiki/about/)
+Discover more about our project on the [About Page](/wiki/about/)
