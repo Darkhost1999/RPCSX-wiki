@@ -1,6 +1,10 @@
 # RPCSX Wiki
 
-## Installation
+This is the repository for hosting and maintaining the RPCSX Wiki.
+All documentation or information to help you have the best possible experience using RPCSX is housed here.
+You can visit the site at anytime from https://rpcsx.github.io/wiki/
+
+## Compiling the Site for Development or Local Hosting Purposes
 
 - Install Ruby:
 
@@ -24,7 +28,7 @@ gem install bundler
 bundle install
 ```
 
-### Development
+### Running the Site for Development or Local Hosting Purposes
 
 - Run Jekyll Server:
 
@@ -34,6 +38,6 @@ Note: Hot reloading is unsupported, refresh the page to see changes.
 bundle exec jekyll serve
 ```
 
-### Before Pushing Changes
+### Before Pushing Changes to the Repository
 
-Run `rubocop` on your local files.
+Run ```rubocop``` on your local files.

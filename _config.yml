@@ -21,7 +21,7 @@
 title: RPCSX Wiki
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
- Documentation for the PlayStation 4 emulator. 
+ Documentation for the PlayStation 4 and PlayStation 5 emulator. 
 baseurl: /wiki/ # the subpath of your site, e.g. /blog
 url: https://rpcsx.github.io # the base hostname & protocol for your site, e.g. http://example.com
 github_username: RPCSX
